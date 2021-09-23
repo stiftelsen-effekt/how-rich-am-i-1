@@ -271,7 +271,7 @@ const Calculation = withStyles(calculationStyles)(({ income, countryCode, househ
             Hvis husholdningen din har en inntekt på{' '}
             <p style={{ margin: '0px', wordBreak: 'keep-all', display: 'inline-block' }}>{formatCurrency(income)} kr</p>
           </Typography>
-          <Typography className={classes.subMainText}>
+          <Typography className={classes.subMainText} style={{ color: '#000' }}>
             (i en husholdning på {household.adults} voks{household.adults > 1 ? 'ne' : 'en'}
             {household.children > 0 && <span>
               {' '}og {household.children} barn{household.children > 1 ? '' : ''}
@@ -326,7 +326,7 @@ const AirbnbSlider = withStyles({
     height: 40,
     width: 40,
     backgroundColor: '#fff',
-    border: '1px solid #fb8f29',
+    border: '1px solid currentColor',
     marginTop: -10,
     marginLeft: -20,
     boxShadow: '#ebebeb 0 2px 2px',
@@ -337,7 +337,7 @@ const AirbnbSlider = withStyles({
       // display: inline-block !important;
       height: 15,
       width: 3,
-      backgroundColor: '#fb8f29',
+      backgroundColor: 'currentColor',
       marginLeft: 1,
       marginRight: 1
     }
